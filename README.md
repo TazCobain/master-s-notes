@@ -2,7 +2,7 @@
 
 Questa repository contiene la mia raccolta di appunti universitari per il corso di Laurea Magistrale in "Comunicazione multimediale e tecnologie dell'informazione" - curriculum: **ARTIFICIAL INTELLIGENCE,INDUSTRIAL AUTOMATION, AND INTERNET OF THINGS (nazionale)**.
 
-Ho deciso di rendere pubblica questa repository perché sono per la libera condivisione della informazioni e se questi appunti possono aiutarti a preparare un esame o a ripassare un concetto, sentiti libero di usarli! 📚
+Ho deciso di rendere pubblica questa repository perché credo nella libera condivisione delle informazioni. Se questi appunti possono aiutarti a preparare un esame o a ripassare un concetto, sentiti libero di usarli! 📚
 
 ### 🛠️ Pensati per Obsidian
 Questa repository non è una semplice cartella di file testo, ma **Vault di Obsidian**. 
