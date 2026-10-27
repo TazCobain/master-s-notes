@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"d573db66a6348aeb","type":"text","text":"Stack funzionali usati per gestire i sistemi IOT","x":-220,"y":-70,"width":240,"height":50},
+		{"id":"e2cdab270b5a6b3d","type":"file","file":"smartIOTdev/01 - Studio delle Reti/Functional stack.md","x":220,"y":-500,"width":400,"height":400},
+		{"id":"ae38219ba975178b","type":"file","file":"smartIOTdev/01 - Studio delle Reti/Data management & compute stack.md","x":220,"y":40,"width":400,"height":400},
+		{"id":"549a05b95ebf8b63","type":"file","file":"smartIOTdev/01 - Studio delle Reti/Modello IoTWF.md","x":-700,"y":-245,"width":400,"height":400},
+		{"id":"0cd9af0720166dc9","type":"file","file":"smartIOTdev/README.md","x":-1102,"y":-860,"width":402,"height":400},
+		{"id":"aa53a144d553ad17","type":"file","file":"smartIOTdev/02 - Hardware/Attuatori.md","x":-260,"y":-1550,"width":400,"height":400},
+		{"id":"7875154cde2dc44c","type":"file","file":"smartIOTdev/02 - Hardware/Sensori.md","x":-260,"y":-1120,"width":400,"height":400},
+		{"id":"2c1307006c207677","type":"text","text":"uno smart object lavora sfruttando il loop tra","x":-780,"y":-1180,"width":250,"height":60},
+		{"id":"45ea192d8561dc7b","x":-76,"y":897,"width":400,"height":400,"type":"file","file":"smartIOTdev/01 - Studio delle Reti/protocolli-di-comunicazione/IEEE 802.11ah (Wi-Fi HaLow).md"},
+		{"id":"cfe8a27917142712","x":-76,"y":1320,"width":400,"height":400,"type":"file","file":"smartIOTdev/01 - Studio delle Reti/protocolli-di-comunicazione/LoRaWAN.md"},
+		{"id":"c2d3051db77d3b4b","x":-76,"y":1760,"width":400,"height":400,"type":"file","file":"smartIOTdev/01 - Studio delle Reti/protocolli-di-comunicazione/IEEE 1901.2 - Physical Layer (PHY).md"},
+		{"id":"5558aea494047c4a","type":"file","file":"smartIOTdev/01 - Studio delle Reti/Modello ISO OSI.md","x":-620,"y":1320,"width":400,"height":400},
+		{"id":"d5df6f7b48c18cff","x":720,"y":1320,"width":400,"height":400,"type":"file","file":"smartIOTdev/01 - Studio delle Reti/Reti M2M.md"}
+	],
+	"edges":[
+		{"id":"dd42417f26edf6c7","fromNode":"549a05b95ebf8b63","fromSide":"right","toNode":"d573db66a6348aeb","toSide":"left"},
+		{"id":"6843d774583bbe2f","fromNode":"d573db66a6348aeb","fromSide":"right","toNode":"ae38219ba975178b","toSide":"left"},
+		{"id":"f8eb3dd949881f8d","fromNode":"d573db66a6348aeb","fromSide":"right","toNode":"e2cdab270b5a6b3d","toSide":"left"},
+		{"id":"7679cee59747556c","fromNode":"2c1307006c207677","fromSide":"right","toNode":"aa53a144d553ad17","toSide":"left"},
+		{"id":"c7dd3bd3ced441e0","fromNode":"2c1307006c207677","fromSide":"right","toNode":"7875154cde2dc44c","toSide":"left"},
+		{"id":"f6807cdcc81f4a5a","fromNode":"5558aea494047c4a","fromSide":"right","toNode":"45ea192d8561dc7b","toSide":"left"},
+		{"id":"a1062360245bdcbe","fromNode":"5558aea494047c4a","fromSide":"right","toNode":"cfe8a27917142712","toSide":"left"},
+		{"id":"d4afcff74fe46194","fromNode":"5558aea494047c4a","fromSide":"right","toNode":"c2d3051db77d3b4b","toSide":"left"},
+		{"id":"2230204b945db91b","fromNode":"cfe8a27917142712","fromSide":"right","toNode":"d5df6f7b48c18cff","toSide":"left"}
+	]
+}

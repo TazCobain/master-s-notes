@@ -1,0 +1,58 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:ML  ",
+      "color": {
+        "a": 1,
+        "rgb": 1427720
+      }
+    },
+    {
+      "query": "path:socitaEtica  ",
+      "color": {
+        "a": 1,
+        "rgb": 16350184
+      }
+    },
+    {
+      "query": "path:smartIOTdev  ",
+      "color": {
+        "a": 1,
+        "rgb": 2074361
+      }
+    },
+    {
+      "query": "path:applicazioniMobili  ",
+      "color": {
+        "a": 1,
+        "rgb": 16770099
+      }
+    },
+    {
+      "query": "",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.4055997244908,
+  "repelStrength": 7.17701466102529,
+  "linkStrength": 1,
+  "linkDistance": 30,
+  "scale": 0.7706741420674121,
+  "close": true
+}

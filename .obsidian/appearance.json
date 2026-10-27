@@ -1,0 +1,8 @@
+{
+  "enabledCssSnippets": [
+    "esami"
+  ],
+  "showViewHeader": true,
+  "showRibbon": true,
+  "nativeMenus": true
+}

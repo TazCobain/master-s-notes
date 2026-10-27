@@ -1,0 +1,48 @@
+/* ===================================================================
+   STILE ESAMI MAGISTRALE 
+   (Linea laterale, Header colorato, Font dedicati per il titolo)
+=================================================================== */
+
+/* 1. ASSEGNAZIONE COLORI, FONT E CLASSI */
+.workspace-leaf-content:has(.societa-etica) { 
+    --exam-color: #ff79c6; /* Rosa */
+    --exam-font: 'Georgia', 'Times New Roman', serif; 
+}
+.workspace-leaf-content:has(.machine-learning) { 
+    --exam-color: #50fa7b; /* Verde */
+    --exam-font: 'Consolas', 'Courier New', monospace; 
+}
+.workspace-leaf-content:has(.smart-iot) { 
+    --exam-color: #4daafc; /* Blu */
+    --exam-font: 'Trebuchet MS', 'Segoe UI', sans-serif; 
+}
+.workspace-leaf-content:has(.applicazioni-mobili) { 
+    --exam-color: #ffd166; /* Giallognolo */
+    --exam-font: 'Helvetica Neue', 'Arial', sans-serif; 
+}
+
+/* 2. STRUTTURA BARRA LATERALE */
+.workspace-leaf-content:has(:is(.societa-etica, .machine-learning, .smart-iot, .applicazioni-mobili)) {
+    /* Linea verticale a sinistra */
+    box-shadow: inset 4px 0 0 0 var(--exam-color) !important;
+}
+
+/* 3. COLORAZIONE TESTATA (Effetto Tab) */
+.workspace-leaf-content:has(:is(.societa-etica, .machine-learning, .smart-iot, .applicazioni-mobili)) .view-header {
+    border-top: 3px solid var(--exam-color) !important;
+    background: linear-gradient(
+        to bottom, 
+        color-mix(in srgb, var(--exam-color) 15%, transparent) 0%, 
+        transparent 100%
+    );
+}
+
+.workspace-leaf-content:has(:is(.societa-etica, .machine-learning, .smart-iot, .applicazioni-mobili)) .view-header-title {
+    color: var(--exam-color) !important;
+}
+
+/* 4. CAMBIO FONT DEL TITOLO PRINCIPALE DELLA NOTA */
+.workspace-leaf-content:has(:is(.societa-etica, .machine-learning, .smart-iot, .applicazioni-mobili)) .inline-title {
+    font-family: var(--exam-font) !important;
+    color: var(--exam-color);
+}
