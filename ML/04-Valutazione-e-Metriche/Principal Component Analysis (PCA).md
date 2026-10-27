@@ -5,6 +5,7 @@ aliases:
 tags:
   - Teoria
   - ML-optimization
+  - dimensionality-reduction
 cssclasses:
   - machine-learning
 ---

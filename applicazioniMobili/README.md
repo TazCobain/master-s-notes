@@ -1,6 +1,6 @@
 note: Inizio lezioni 12:45 al posto delle 12:30
 
-## argomenti ed approzzio del corso
+## argomenti ed approccio del corso
 - Informazioni su tecniche e approcci per creare applicazioni per telefono (solo telefono).
 - ci si concentra su ciò che si vede e non si perderà tempo con il backend.
 - obbiettivo: creare delle soluzioni di interfaccia che permettano agli utenti di avere un'esperienza positiva.
@@ -8,7 +8,6 @@ note: Inizio lezioni 12:45 al posto delle 12:30
 ## tecnologie
 - flutter (dart)
 - android studio / VS code
-- 
 
 ## regole esame
 - Non ci sarà un progetto effettivo perché l'esame si concentra sulla progettazione e non l'implementazione.

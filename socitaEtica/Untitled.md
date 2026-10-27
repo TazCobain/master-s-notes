@@ -1,0 +1,4 @@
+---
+cssclasses:
+  - societa-etica
+---
