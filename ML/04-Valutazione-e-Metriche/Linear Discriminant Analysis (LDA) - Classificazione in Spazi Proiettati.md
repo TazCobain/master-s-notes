@@ -10,10 +10,12 @@ aliases:
   - Linear Discriminant Analysis
 ---
 > [!abstract] Linear Discriminant Analysis in breve
-> LDA unisce riduzione della dimensionalità e classificazione proiettando i campioni lungo direzioni ottimali che ==🟡massimizzano la distanza tra le medie delle classi e minimizzano la dispersione interna==. L'ottimizzazione del rapporto tra le matrici di scatter $S_B$ e $S_W$ si risolve tramite un problema agli autovalori generalizzato, limitando la dimensione del sottospazio discriminante a un massimo di $D-1$. In presenza di matrici singolari dovute al problema dello _Small Sample Size_, l'approccio regolarizzato evita l'eliminazione del null space di $S_W$, preservando l'informazione a più elevato potere discriminativo.
+> LDA **unisce riduzione della dimensionalità e classificazione** proiettando i campioni lungo direzioni ottimali che ==🟡massimizzano la distanza tra le medie delle classi e minimizzano la dispersione interna==. L'ottimizzazione del rapporto tra le matrici di scatter $S_B$ e $S_W$ si risolve tramite un problema agli autovalori generalizzato, limitando la dimensione del sottospazio discriminante a un massimo di $D-1$. In presenza di matrici singolari dovute al problema dello _Small Sample Size_, l'approccio regolarizzato evita l'eliminazione del null space di $S_W$, preservando l'informazione a più elevato potere discriminativo.
+>> [!tip] quando funziona?
+> > LDA funziona se le sue precondizioni sono rispettate, ovvero:
+> > 1.  Che i dati devono essere **distribuiti**, secondo l'appartenenza ad una classe, in modo **gaussiano**. 
+> > 2. Le classi devono essere **linearmente separabili**.
 
-> [!tip] quanto funziona?
-> > LDA funziona se le sue precondizioni sono rispettate; ovvero che i dati devono essere distribuiti, secondo l'appartenenza ad una classe, in modo gaussiane
 
 # Linear Discriminant Analysis (LDA): Classificazione in Spazi Proiettati
 

@@ -1,4 +1,6 @@
 [
   "obsidian-excalidraw-plugin",
-  "github-sync"
+  "github-sync",
+  "dataview",
+  "obsidian-dice-roller"
 ]
