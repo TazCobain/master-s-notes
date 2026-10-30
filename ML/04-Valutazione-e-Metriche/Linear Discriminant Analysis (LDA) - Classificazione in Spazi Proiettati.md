@@ -10,18 +10,18 @@ aliases:
   - Linear Discriminant Analysis
 ---
 > [!abstract] Linear Discriminant Analysis in breve
-> LDA unisce riduzione della dimensionalità e classificazione proiettando i campioni lungo direzioni ottimali che massimizzano la distanza tra le medie delle classi e minimizzano la dispersione interna. L'ottimizzazione del rapporto tra le matrici di scatter $S_B$ e $S_W$ si risolve tramite un problema agli autovalori generalizzato, limitando la dimensione del sottospazio discriminante a un massimo di $D-1$. In presenza di matrici singolari dovute al problema dello _Small Sample Size_, l'approccio regolarizzato evita l'eliminazione del null space di $S_W$, preservando l'informazione a più elevato potere discriminativo.
+> LDA unisce riduzione della dimensionalità e classificazione proiettando i campioni lungo direzioni ottimali che ==🟡massimizzano la distanza tra le medie delle classi e minimizzano la dispersione interna==. L'ottimizzazione del rapporto tra le matrici di scatter $S_B$ e $S_W$ si risolve tramite un problema agli autovalori generalizzato, limitando la dimensione del sottospazio discriminante a un massimo di $D-1$. In presenza di matrici singolari dovute al problema dello _Small Sample Size_, l'approccio regolarizzato evita l'eliminazione del null space di $S_W$, preservando l'informazione a più elevato potere discriminativo.
 # Linear Discriminant Analysis (LDA): Classificazione in Spazi Proiettati
 
 ## 1. Introduzione e Intuizione Teorica
 
 ### Il Problema della Classificazione
-Nel contesto del Machine Learning, l'obiettivo di una **regola di classificazione** è definire un criterio che, partendo da un insieme di misurazioni, sia in grado di associare una specifica classe a un determinato pattern. Dal punto di vista matematico, distinguiamo due elementi fondamentali:
+Nel contesto del Machine Learning, l'obiettivo di una **regola di classificazione** è definire un criterio che, partendo da un insieme di misurazioni, sia in grado di ==associare una specifica classe a un determinato pattern==. Dal punto di vista matematico, distinguiamo due elementi fondamentali:
 * **Variabile indipendente ($x$):** rappresenta il vettore delle *feature* (le misurazioni effettuate sull'oggetto).
 * **Variabile dipendente ($y$):** rappresenta la classe o il gruppo di appartenenza degli oggetti.
 
 ### L'Obiettivo di LDA e la Separabilità Lineare
-La **Linear Discriminant Analysis (LDA)** si pone l'obiettivo di determinare una combinazione lineare nello spazio delle feature che separi linearmente gli oggetti nei rispettivi gruppi o classi. A seconda della dimensione dello spazio delle feature, il confine di separazione lineare assume una forma geometrica differente:
+La **Linear Discriminant Analysis (LDA)** si pone l'obiettivo di determinare una ==🟠combinazione lineare nello spazio delle feature che separi linearmente gli oggetti nei rispettivi gruppi o classi==. A seconda della dimensione dello spazio delle feature, il confine di separazione lineare assume una forma geometrica differente:
 * **2 Feature** $\implies$ Linea.
 * **3 Feature** $\implies$ Piano.
 * **4 Feature** $\implies$ Iper-piano.
