@@ -18,7 +18,7 @@ aliases:
 
 
 # Linear Discriminant Analysis (LDA): Classificazione in Spazi Proiettati
-
+ 
 ## 1. Introduzione e Intuizione Teorica
 
 ### Il Problema della Classificazione
