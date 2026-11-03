@@ -4,6 +4,8 @@ cssclasses:
 tags:
   - activation-function
   - classification
+aliases:
+  - Rectified Linear Unit
 ---
 > [!abstract] In sintesi
 > La **ReLU (Rectified Linear Unit)** è la funzione di attivazione più utilizzata negli hidden layer delle reti neurali moderne. Definita matematicamente come $f(x) = \max(0, x)$, introduce la non-linearità indispensabile per apprendere relazioni complesse con un costo computazionale irrisorio. 

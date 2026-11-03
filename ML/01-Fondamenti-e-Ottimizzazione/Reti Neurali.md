@@ -38,13 +38,33 @@ I livelli nascosti si trovano tra l'input e l'output e sono il "motore" computaz
 	- _==🟠Classificazione multi-classe==_: $N$ neuroni, quanti sono le classi possibili (es. probabilità che l'immagine sia un cane, un gatto o un'auto).
 	- _==🟠Regressione==_: 1 neurone che restituisce un valore numerico continuo (es. la previsione del prezzo di una casa).
 
-## Il neurone
+## Il neurone (la base di tutto)
+<p align="center">   <img src="NeuralModel.png" style="background-color: white; padding: 10px; border-radius: 6px; width: 450px; max-width: 100%; height: auto;" /> </p>
 
-## Activation Function (Funzione di Attivazione)
+Il neurone (spesso chiamato _nodo_ o _percettrone_) è **l'unità computazionale fondamentale** di una rete neurale. Ispirato al funzionamento del neurone biologico, il suo compito è ricevere informazioni, elaborarle matematicamente e decidere se (e con quanta intensità) trasmettere un segnale ai neuroni successivi.
+Il suo funzionamento interno segue una sequenza matematica precisa:
+1. **Ricezione e pesatura degli input**: Il neurone riceve i valori in ingresso (che possono essere i dati originali o l'output dei neuroni del layer precedente). Ogni singolo input ($x_i$) viene moltiplicato per il proprio **peso** assegnato ($w_i$), che ==stabilisce quanto quel segnale sia rilevante== per il risultato.
+2. **Sommatoria pesata dei bias**: Il neurone calcola la somma di tutti questi input moltiplicati per i rispettivi pesi. A questa somma aggiunge un valore costante chiamato **bias** ($b$) che agisce come una soglia di base (simile all'intercetta in una retta), permettendo al neurone di traslare il risultato per adattarsi meglio al problema.  Matematicamente questo: $$z = \sum (x_i \cdot w_i) + b$$
+3. **Attivazione ed emissione**: Il risultato ($z$) non viene passato così com'è ma viene elaborato dalla **funzione di attivazione** ($f(z)$), che lo trasforma e genera l'output finale ($y$) da inviare al livello successivo.
+
+> [!NOTE] iI neurone in matematichese
+> $$f(\sum (x_i \cdot w_i) + b)$$
+
+## Activation Function 
 La funzione di attivazione è un'operazione matematica applicata al risultato di ogni neurone (dopo aver sommato input $\times$ pesi $+$ bias) prima di passarlo al livello successivo.
 - **Scopo principale:** Introdurre la **non-linearità** nel modello.
 - **Perché è cruciale?** Senza funzioni di attivazione, non importa quanti _hidden layers_ aggiungi: l'intera rete si comporterebbe come una singola e semplice regressione lineare, incapace di risolvere problemi complessi o mappare relazioni non lineari (come il riconoscimento vocale o visivo).
+
 **Funzioni di attivazione comuni:**
-- **ReLU (Rectified Linear Unit):** Restituisce $x$ se positivo, altrimenti $0$. È la più usata negli _hidden layers_ perché computazionalmente leggera e previene il problema della scomparsa del gradiente.
--  **Sigmoide:** Comprime i valori in un intervallo tra $0$ e $1$. Storicamente molto usata, oggi si usa per lo più nell'_output layer_ per la classificazione binaria (interpretando il risultato come probabilità).
-- **Softmax:** Utilizzata nell'_output layer_ per la classificazione multi-classe, trasforma i risultati grezzi in una distribuzione di probabilità che somma a $1$.
+- **ReLU ([[ReLu|Rectified Linear Unit]]):** Restituisce $x$ se positivo, altrimenti $0$. È la più usata negli _hidden layers_ perché computazionalmente leggera e previene il problema della scomparsa del gradiente.
+-  **[[Sigmoide]]:** Comprime i valori in un intervallo tra $0$ e $1$. Storicamente molto usata, oggi si usa per lo più nell'_output layer_ per la classificazione binaria (interpretando il risultato come probabilità).
+- **[[Softmax]]:** Utilizzata nell'_output layer_ per la classificazione multi-classe, trasforma i risultati grezzi in una distribuzione di probabilità che somma a $1$.
+<p align="center">   <img src="type-of-activation-function.png" style="background-color: white; padding: 10px; border-radius: 6px; width: 550px; max-width: 100%; height: auto;" /> </p>
+
+---
+> [!warning] Attenzione: Rischio di Addestramento Infinito (Mancata Convergenza) 
+> Poiché l'addestramento di una rete neurale è un processo iterativo basato sull'ottimizzazione e sulla minimizzazione continua dell'errore (Loss), senza precise condizioni di interruzione il modello potrebbe continuare ad aggiornare i pesi all'infinito senza mai trovare una soluzione definitiva.
+ > Per evitare che il _training loop_ giri a vuoto o rimanga intrappolato, devono sussistere determinate condizioni e salvaguardie architettoniche: 
+> - **Arresto Anticipato (Early Stopping):** Un meccanismo di controllo che interrompe forzatamente l'addestramento se le prestazioni sui dati di validazione non migliorano per un numero definito di cicli (epoche).
+> - **Imporre un limite massimo di iterazioni (Max Epochs)**
+
