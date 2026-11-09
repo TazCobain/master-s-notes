@@ -5,41 +5,34 @@
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:ML  ",
+      "query": "path:ML/ ",
       "color": {
         "a": 1,
-        "rgb": 1427720
-      }
-    },
-    {
-      "query": "path:socitaEtica  ",
-      "color": {
-        "a": 1,
-        "rgb": 16350184
+        "rgb": 2156561
       }
     },
     {
       "query": "path:smartIOTdev  ",
       "color": {
         "a": 1,
-        "rgb": 2074361
+        "rgb": 382463
+      }
+    },
+    {
+      "query": "path:socitaEtica  ",
+      "color": {
+        "a": 1,
+        "rgb": 15026920
       }
     },
     {
       "query": "path:applicazioniMobili  ",
       "color": {
         "a": 1,
-        "rgb": 16770099
-      }
-    },
-    {
-      "query": "",
-      "color": {
-        "a": 1,
-        "rgb": 5431473
+        "rgb": 15511561
       }
     }
   ],
@@ -49,10 +42,10 @@
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": true,
-  "centerStrength": 0.4055997244908,
-  "repelStrength": 7.17701466102529,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
   "linkStrength": 1,
-  "linkDistance": 30,
-  "scale": 1.0534979423868311,
+  "linkDistance": 250,
+  "scale": 0.7023319615912202,
   "close": true
 }

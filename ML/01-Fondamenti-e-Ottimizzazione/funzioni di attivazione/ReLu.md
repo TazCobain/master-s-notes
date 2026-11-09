@@ -24,7 +24,7 @@ Se disegniamo il suo grafico, vedremo una linea orizzontale piatta (sullo zero) 
 
 
 ## 2. Quando va usata? 
-La ReLU è diventata lo standard assoluto ("default") per gli **hidden layers** delle [[reti neaurale]] moderne (reti feedforward, reti convoluzionali CNN, ecc.). 
+La ReLU è diventata lo standard assoluto ("default") per gli **hidden layers** delle [[Reti Neurali]] moderne (reti feedforward, reti convoluzionali CNN, ecc.). 
 
 > [!warning]  dove NON usarla
 > Quasi mai nel livello di output finale. Se dobbiamo prevedere una probabilità tra 0 e 1, usiamo una [[Funzione Sigmoide]] o una [[Softmax]]. La ReLU serve solo nei "motori interni" della rete. 
@@ -52,6 +52,6 @@ Per evitare questo degradamento dei neurani sono nate delle varianti, come la **
 * [[Funzioni di Attivazione (Panoramica)]] 
 * [[Sigmoide|funzione_sigmoide]] 
 * [[Vanishing Gradient Problem]] 
-* [[Leaky ReLU ed ELU]]
+
 
 
