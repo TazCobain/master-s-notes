@@ -2,7 +2,7 @@
 cssclasses:
   - societa-etica
 tags:
-  - paradigmi-teorici-sts
+  - Etica
 aliases:
   - SCOT
   - Social Construction of Technology
