@@ -27,5 +27,5 @@ La sua tesi centrale è radicale: **la società, la scienza e la tecnologia non 
 ---
 
 > [!info] SCOT VS ANT
-> Mentre il modello SCOT (che abbiamo visto prima) è **sociocentrico** (dice che sono gli umani a dare forma alla tecnologia), l'ANT è **ibrido**: sostiene che la tecnologia e gli umani si modellino a vicenda in modo continuo e inseparabile.
+> Mentre il modello [[SCOT (Social Construction of Technology)|SCOT]] (che abbiamo visto prima) è **sociocentrico** (dice che sono gli umani a dare forma alla tecnologia), l'ANT è **ibrido**: sostiene che la tecnologia e gli umani si modellino a vicenda in modo continuo e inseparabile.
 
