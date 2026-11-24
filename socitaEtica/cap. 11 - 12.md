@@ -11,9 +11,18 @@ media studies:
 - studio dei pibblici:
 - economia politica:
 
- ## 4 dimensioni STS per ICT
+ ## 4 dimensioni STS per ICT (interaction e comunication techology)
  - critica al determinismo:
-   confutare l'idea che i media possiedano un'essenza a priori: le conseguenze tecnologiche dipendono da processi tecnici, sociali e pratici
- - uso e appropriazione
- - Materialità
- -  Infrastruttura digitale
+   confutare l'idea che i media possiedano un'essenza a priori: le conseguenze tecnologiche dipendono da processi tecnici, sociali e pratici.
+ - uso e appropriazione: Rilevanza della sfera dell'uso e dell'appropriazione dei media da parte dei pubblici concreti.
+ - Materialità: Attenzione al ruolo della materialità delle tecnologie mediali del dare forma a contenuti e pratiche.
+ -  Infrastruttura digitale: La dimensione infrastrutturale dei media e delle reti digitali, incluso il crescente ruolo delle piattaforme online.
+
+
+
+# leggere il capitolo 11 che riassume dall'1 al 7
+
+
+
+
+
