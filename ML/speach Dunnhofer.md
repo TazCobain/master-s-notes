@@ -17,17 +17,18 @@ IT inferior temporal cortex
 Viene fatto un campionamento sui primati con un dispositivo simile al neuralink. Viene fatta vedere una foto alla  cavia e vine campionato il numero di neuroni attivati in un tempo X. le regioni versi sono i momenti in cui il neurone si è attivato e l'intensità indica quanti si sono attivati in quel istante temporale. Praticamente viene fatto un encoder con usando la la cavia e poi si usa una Super Vector Machine per creare un decoder capace di passare da un tensore di neuroni attivi all'immagine iniziale.
 <p align="center">   <img src="neuro-response-1.png" style="width: 450px; max-width: 100%; height: auto;" /> </p> <p align="center">   <img src="neuro-response-2.png" style="width: 450px; max-width: 100%; height: auto;" /> </p>
 
-> [!NOTE] Domande
-> 1) come si chiama esattamente questa pratica (quello dei neuroni e della SVM). 2
-> 2) Ricapitolandoi; se è correttto e chiedere se ogni tendore è 0/1 o se è uno scalare che indica l'intensità dell'attivazione).
+
 
 Il passo successivo è **sostituire la cavia con una rete neurale artificiale** per vedere se è in grado di simulare in modo sintetico il vettore di attivazione dei neuroni di output. Successivamente si usa una regressione lineare per predire l'outup "atteso" che avrebbe avuto il primate
 
 <p align="center">   <img src="neuro-response-3.png" style="width: 450px; max-width: 100%; height: auto;" /> </p>
 <p align="center">   <img src="neuro-response-4.png" style="width: 450px; max-width: 100%; height: auto;" /> </p>
 
-> [!NOTE] Domande
-> Ma quindo tutto questa parte {dati di input, ANN (_Artificial Neural Network_), syntetic neural responde, linear regression neural response} è tutto la parte di encoding del dato con il neural responde del primate come label? quindi poi andrebbe aggiunta la parte di deconding vista sopra?
+> [!question] domande
+> 1) come si chiama esattamente questa pratica (quello dei neuroni e della SVM). 2
+> 2) Ricapitolandoi; se è correttto e chiedere se ogni tendore è 0/1 o se è uno scalare che indica l'intensità dell'attivazione).
+> 3) Ma quindi tutta questa parte {dati di input, ANN (_Artificial Neural Network_), syntetic neural responde, linear regression neural response} è tutta la parte di encoding del dato con il neural responde del primate come label? 
+>    Si in pratica così facendo si ottiene un simulacro che sostituisce l'encoder con la cavia e si ottiene un dato codificato attendibile che poi può essere usato come input per il decoder.
 
 ---
 Presentatore: Matteo Dunnhofer
